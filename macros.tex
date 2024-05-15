@@ -61,4 +61,16 @@
 % The following definition will also output a warning to the console
 \newcommand{\FIXME}[1]{\typeout{**FIXME** #1}\textbf{[FIXME: #1]}}
 
+\renewcommand{\figureautorefname}{Fig.\footnotesize}
+\renewcommand{\tableautorefname}{Table}
+\providecommand*{\lstlistingautorefname}{Listing}
+% Make sure there is no whitespace 
+% in-between the section symbol and the number
+\def\Snospace~{\S{}}
+\renewcommand{\sectionautorefname}{\Snospace}
+\renewcommand{\subsectionautorefname}{\Snospace}
+\renewcommand{\subsubsectionautorefname}{\Snospace}
+\newcommand{\subfigureautorefname}{\figureautorefname}
+\renewcommand*{\appendixautorefname}{\Snospace}
+
 % END
